@@ -1,7 +1,0 @@
-package com.posidex.boot.pms.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface ProductRepository extends JpaRepository<T, ID> {
-
-}

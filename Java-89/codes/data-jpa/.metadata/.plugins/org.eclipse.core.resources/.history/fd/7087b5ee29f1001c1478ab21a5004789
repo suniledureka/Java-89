@@ -1,7 +1,0 @@
-package com.posidex.boot.repository;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface ContactRepository extends CrudRepository<T, ID> {
-
-}

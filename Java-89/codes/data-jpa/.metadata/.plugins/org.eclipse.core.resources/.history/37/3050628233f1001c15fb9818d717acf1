@@ -1,5 +1,0 @@
-package com.posidex.boot.pms.repository;
-
-public interface ProductRepository {
-
-}

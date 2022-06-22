@@ -1,6 +1,0 @@
-INDEX VERSION 1.131+E:\posidex\spring\boot\data-jpa\.metadata\.plugins\org.eclipse.jdt.core
-1178246736.index
-1865797976.index
-1936048127.index
-3828323776.index
-2554433646.index
