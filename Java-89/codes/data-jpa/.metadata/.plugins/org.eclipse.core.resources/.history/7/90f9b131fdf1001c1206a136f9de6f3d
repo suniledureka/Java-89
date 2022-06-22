@@ -1,0 +1,27 @@
+package com.posidex.boot.pms;
+
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.posidex.boot.pms.entity.Product;
+import com.posidex.boot.pms.repository.ProductRepository;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ApplicationContext context = SpringApplication.run(Application.class, args);
+		
+		ProductRepository repo = context.getBean(ProductRepository.class);
+		
+		//--- list the products in the ascending order of product name
+		List<Product> products = repo.findByOrderByProductName();
+		products.forEach(product -> System.out.println(product));
+		
+		
+	}
+
+}

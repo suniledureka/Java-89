@@ -1,0 +1,32 @@
+package com.posidex.boot.pms;
+
+import java.util.Optional;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.posidex.boot.pms.entity.Product;
+import com.posidex.boot.pms.repository.ProductRepository;
+
+@SpringBootApplication
+public class Application {
+	private static ProductRepository productRepo;
+	
+	public static void main(String[] args) {
+		ApplicationContext context = SpringApplication.run(Application.class, args);
+		
+		 productRepo = context.getBean(ProductRepository.class);
+		 
+		 /*
+		 String pname = "Mobilee"; 
+		 Product product = productRepo.findByProductName(pname);
+		 System.out.println(product);
+		 */
+		 
+		 String pname = "Computer";
+		 float price = 34000;
+		 Optional<Product> optProduct =  productRepo.findByProductNameAndProductprice(pname, price);
+		 
+	}
+}

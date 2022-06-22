@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.posidex.boot.pms.entity&apos; to &apos;04.sb-data-jpa-repository/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;03.sb-data-jpa-finders&apos;&#x0D;&#x0A;- Destination element: &apos;04.sb-data-jpa-repository/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;03.sb-data-jpa-finders/src/main/java/com.posidex.boot.pms.entity&apos;" description="Copy package" destination="=04.sb-data-jpa-repository/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.posidex.boot.pms.entity" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1655882700985" version="1.0"/>
+</session>

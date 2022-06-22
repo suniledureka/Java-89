@@ -1,0 +1,30 @@
+package com.posidex.boot.pms;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.posidex.boot.pms.entity.Product;
+import com.posidex.boot.pms.repository.ProductRepository;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+		
+		ProductRepository productRepo = context.getBean(ProductRepository.class);
+		
+		//---- to save a Product -------
+		Product product = new Product();
+		product.setProductId(101);
+		product.setProductName("Mobile");
+		product.setProductPrice(15750.5f);
+		
+		Product savedProduct = productRepo.save(product);
+		System.out.println("Product Saved ---> " + savedProduct);
+		
+		context.close();
+	}
+
+}
