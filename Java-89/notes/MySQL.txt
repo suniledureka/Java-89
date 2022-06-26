@@ -1,0 +1,33 @@
+Download & Install MySQL
+========================
+https://dev.mysql.com/downloads/
+> MySQL Installer for Windows
+
+mysql-installer-community-8.0.29.0.msi (439.6 MB)
+
+
+Install It
+
+Choose a Setup Type : Custom 
+ Expand MySQL Servers and Select : MySQL Server 8.0 and move to right side
+ Applications : MySQL Workbench 8.0
+ Applications > MySQL Shell  : 
+> Next > Ready to Install > Execute
+   
+May ask for installing "Microsoft Visual C++ Redistributable for Visual Studio 2019"
+
+> Next (Product Configuration) - Ready to Configure > Next
+
+Type and Networking > Next
+Authentication Method :  Use Strong Password Encryption ... > Next
+
+MySQL Root Password: root
+Repeat Password: root
+> Next
+Windows Service Name: MySQL80
+Standard System Account
+> Next
+Apply Configuration
+> Execute
+
+> Finish
