@@ -1,5 +1,0 @@
-A Programming Language is an artificial language,
-used to express computations or calculations,
-that can be performed with a machine, particularly a computer.
-Java is a programming language.
-Java language is used to develop platform independent applications.
