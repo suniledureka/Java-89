@@ -3,7 +3,7 @@ Spring - Hibernate
 Project Dependencies
 - spring-context
 - spring-jdbc
-- spring-orm
+- spring-orm (Spring Object/Relational Mapping)
 - mysql-connector
 - hibernate-core (Hibernate Core Relocation)
 - hibernate-entitymanager
@@ -67,10 +67,7 @@ public class Employee
 3) Hibernate Mapping File- src/main/resources/employee.hbm.xml
 
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-mapping PUBLIC  
-    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
-    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
-      
+    
 <hibernate-mapping>  
  <class name="co.edureka.entity.Employee" table="emp">  
   <id name="empno" column="empno">  
@@ -148,7 +145,7 @@ package co.edureka.ems.dao
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.orm.hibernate4.HibernateTemplate;
+import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.transaction.annotation.Transactional;
 
 public class EmployeeDao
@@ -201,7 +198,7 @@ public class Main
 {
 public static void main(String[] args) 
 {
-ApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
+ApplicationContext context=new ClassPathXmlApplicationContext("context.xml");
 
 EmployeeDao dao=(EmployeeDao)context.getBean("empdao");
 
@@ -233,11 +230,3 @@ for(int i=0;i<emps.size();i++){
 }
 
 
-Project Dependencies
-- spring-context
-- spring-jdbc
-- spring-orm
-- mysql-connector
-- hibernate-core
-- hibernate-entitymanager
-etc
