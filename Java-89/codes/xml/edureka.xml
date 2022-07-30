@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edureka>
+  <department name="administration">
+  	<employee>
+  		<empno>101</empno>
+  		<name>Abhishek</name>
+  		<designation>Vice President</designation>
+  	</employee>
+  	<employee>
+  		<empno>102</empno>
+  		<name>Gopal</name>
+  		<designation>Manager</designation>
+  	</employee>  	
+  	<employee>
+  		<empno>103</empno>
+  		<name>Swathi Singh</name>
+  		<designation>Executive</designation>
+  	</employee>  	
+  </department>
+</edureka>
